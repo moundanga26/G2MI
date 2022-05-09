@@ -1,0 +1,480 @@
+@import url('./font.css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.service{
+    text-transform: uppercase;
+    color: #ec882c;
+}
+
+
+/* container 1 */
+
+
+.container1 {
+    background-image: url('pattern.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+    border-radius: 0 0 2% 2%;
+}
+
+.boxe1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
+.boxe1 .logo {
+    flex-basis: 10%;
+}
+
+.bar {
+    flex-basis: 30%;
+}
+
+.bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar ul li a {
+    color: whitesmoke;
+}
+
+.bar ul li a:hover {
+    transition: 1s;
+    color: rgb(216, 24, 174);
+}
+
+.end {
+    flex-basis: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.end .btn {
+    border: 0.9px solid whitesmoke;
+    color: whitesmoke;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 7px 40px;
+    border-radius: 5px;
+}
+
+.end .btn:hover {
+    transition: 0.5s;
+    background-color: rgb(216, 24, 174);
+    border: none;
+}
+
+.boxe2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 4%;
+}
+
+.boxe2 .left {
+    flex-basis: 50%;
+    color: whitesmoke;
+}
+
+.left .service {
+    text-transform: uppercase;
+}
+
+.boxe2 .left h1 {
+    font-size: 46px;
+    margin: 2% auto;
+}
+
+.boxe2 .left .text {
+    font-size: 15px;
+    width: 75%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.boxe2 .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.boxe2 .action .btn {
+    background-color: rgb(216, 24, 174);
+    color: whitesmoke;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 7px 22px;
+    border-radius: 5px;
+    border: none;
+}
+
+.boxe2 .action .play {
+    cursor: pointer;
+    margin-left: 11%;
+}
+
+.boxe2 .action .media{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.boxe2 .action .media .icon{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    position: absolute;
+    left: -5.2%
+}
+
+.boxe2 .right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxe2 .right .banner {
+    width: 66%;
+}
+
+.boxe3 {
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-top: 4%;
+}
+
+.boxe3 .social {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 12%;
+    height: 7vh;
+}
+
+.boxe3 .social span{
+    position: relative;
+    background-color: rgba(14, 13, 13, 0.247);
+    display: flex;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-left: 1.1%;
+}
+
+.boxe3 .social .icon{
+    font-size: 23px;
+    position: absolute;
+    top: 29%;
+    left: 27%;
+}
+
+
+/* container 2 */
+
+
+.container2 {
+    height: 100%;
+    margin: 10% auto;
+}
+
+.container2 .reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container2 .reverse .left{
+    color: black;
+    
+}
+
+.container2 .reverse .left .text{
+    color: rgba(53, 52, 52, 0.82);
+}
+
+.container2 .reverse .right{
+    position: relative;
+}
+
+.container2 .reverse .right .banner{
+    box-shadow:  2px 0 60px #888888;
+    border-radius: 5%;
+}
+
+.container2 .reverse .right .shadow{
+    background-color: rgba(124, 124, 124, 0.26);
+    border-radius: 5%;
+    height: 90%;
+    width: 70%;
+    z-index: -1;
+    position: absolute;
+    left: 5%;
+}
+
+
+/* contaner3px */
+
+.container3 {
+    height: 100%;
+    margin: 10% auto;
+}
+
+.container3 .boxe2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 .boxe2 .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3 .boxe2 .top .text{
+    flex-basis: 50%;
+}
+.container3 .boxe2 .left{
+    color: black;
+}
+
+
+
+/* SERVICE CIRCLES */
+
+.cards {    
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+.cards .item {
+    margin: auto;
+    display: flex;
+    width:  50%;
+}
+.item figure {
+    padding: 9%;
+    flex-basis: 80%;
+}
+.item figure img {
+    padding: 9%;
+    border-radius: 50%;
+}
+.item figure .one {
+    border: 7px solid #ec882c;
+}
+.item figure .two {
+    border: 7px solid #E965A5;
+}
+.item figure .three {
+    border: 7px solid #B4C7E7;
+}
+
+.item figure figcaption{
+    margin-top: 15px;
+}
+
+.item figure figcaption h2{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.item figure figcaption p{
+    color: rgba(53, 52, 52, 0.82);
+    margin-bottom: 15px;
+}
+
+.item .shadow {
+    border-radius: 11px;
+    box-shadow:  2px 0 10px #88888860;
+}
+
+/* END SERVICE CIRCLES */
+
+
+
+/* contaner4 */
+
+.boxe2{
+    position: relative;
+}
+
+.container4 {
+    height: 100%;
+    margin-top: 15%;
+}
+
+.container4 .boxe2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container4 .right figure {
+    display: flex;
+}
+
+.container4 .right figure figcaption {
+    margin-left: 2rem;
+}
+
+.container4 .bottom {
+    position: absolute;
+    top: 15rem;
+}
+
+.container4 .right figure img {
+    padding: 4%;
+}
+
+
+/* contaner5 */
+
+
+.container5 {
+    height: auto;
+    margin-top: 15%;
+    background-color: rgba(116, 107, 107, 0.151);
+}
+
+.container5 .boxe2 .left{
+    margin-top: 56px;
+}
+
+.container5 .boxe2 .right{
+    z-index: 3;
+    margin-top: 76px;
+}
+
+.container5 .left {
+    color: black;
+}
+
+.container5 .left .text {
+    color: rgba(53, 52, 52, 0.82);
+}
+
+.container5 .right {
+    display: flex;
+    position: relative;
+}
+
+.container5 .right .white {
+    background-color: white;
+    height: 40vh;
+    flex-basis: 55%;
+    border-radius: 11px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container5 .right .white .icon {
+    width: 50%;
+    margin-top: 25px;
+}
+
+.container5 .right .cooper{
+    display: flex;
+    align-items: center;
+    margin-top: 40%;
+    margin-left: -25%;
+}
+
+.container5 .right .cooper img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.container5 .right .shadow{
+    position: absolute;
+    background-color: rgba(124, 124, 124, 0.26);
+    border-radius: 5%;
+    width: 55%;
+    left: 27%;
+    height: 50vh;
+    right: 15px;
+    z-index: -2;
+}
+
+.container5 .boxe3 {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1%;
+}
+
+.container5 .end{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container5 .boxe3 .left1 img,
+.container5 .boxe3 .right1 img {
+    border-radius: 5%;
+}
+
+.container5 .boxe3 .right1 img {
+    margin-left: -25%;
+}
+
+.container5 .boxe3 .right1 img {
+    margin-left: -25%;
+}
+
+/* container6 */
+
+.ads .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* footer */
+.pres{
+    background-color:white;
+    margin-top: 3%;
+    height: 80vh;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-betweensssssss;
+}
+
+.ecris {
+    position: absolute;
+width: 100%;
+height: 120vh;
+
+background: #56597A;
+}
