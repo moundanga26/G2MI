@@ -124,6 +124,15 @@
     border-radius: 5px;
     border: none;
 }
+.btn1{
+    background-color: rgb(216, 24, 174);
+    color: whitesmoke;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 7px 22px;
+    border-radius: 5px;
+    border: none;
+}
 
 .boxe2 .action .play {
     cursor: pointer;
@@ -193,44 +202,17 @@
 /* container 2 */
 
 
-.container2 {
-    height: 100%;
-    margin: 10% auto;
+.container2{
+    height: 100vh;
+    width: 100%;
 }
-
-.container2 .reverse{
+.box2{
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
 }
-
-.container2 .reverse .left{
-    color: black;
-    
+.right1{
+    margin-top: 10%;
 }
-
-.container2 .reverse .left .text{
-    color: rgba(53, 52, 52, 0.82);
-}
-
-.container2 .reverse .right{
-    position: relative;
-}
-
-.container2 .reverse .right .banner{
-    box-shadow:  2px 0 60px #888888;
-    border-radius: 5%;
-}
-
-.container2 .reverse .right .shadow{
-    background-color: rgba(124, 124, 124, 0.26);
-    border-radius: 5%;
-    height: 90%;
-    width: 70%;
-    z-index: -1;
-    position: absolute;
-    left: 5%;
-}
-
 
 /* contaner3px */
 
@@ -304,9 +286,12 @@
     margin-bottom: 15px;
 }
 
-.item .shadow {
-    border-radius: 11px;
-    box-shadow:  2px 0 10px #88888860;
+.item:hover{
+    background-color: white;
+    box-shadow: 2px 0 15px #88888860 ;
+    border-radius: 10px;
+    
+
 }
 
 /* END SERVICE CIRCLES */
@@ -457,24 +442,123 @@
     justify-content: space-around;
     align-items: center;
 }
+/* pour faire la marge*/
+
+.avant{
+    height: 20vh;
+    width: 100%;
+    background-color: #E965A5;
+}
+
+/*page avant footer*/
+
+.container7{
+    width: 100%;
+    height: 70vh;
+    background-color: #B4C7E7;
+}
+.form1{
+    width: 70%;
+    height: 50vh;
+    background-color:blue;
+    margin-left: 15%;
+    border-radius: 7px;
+    
+}
+.email{
+    height: 7vh;
+    width: 25%;
+    border-radius: 7px;
+    border: none;
+}
+.sousou{
+    background-color: #ec882c;
+    height: 7vh;
+    width: 15%;
+    border-radius: 7px;
+    border: none;
+
+}
+.rectangle1{
+    position: absolute;
+    width: 214px;
+    height: 200px;
+    background: #e29e0a;
+    box-shadow: 0px 24px 48px rgba(0, 8, 92, 0.0813519);
+    border-radius: 16px;
+    right: 550px;
+}
+.rectangle1{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.rectangle2{
+    position: absolute;
+    width: 214px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 48px rgba(0, 8, 92, 0.0813519);
+    border-radius: 16px;
+    right: 270px;
+    top: 3750px;
+    
+}
+
+
 
 /* footer */
 .pres{
     background-color:white;
     margin-top: 3%;
     height: 80vh;
-    width: 30%;
+    width: 60%;
     border-radius: 10px;
-    margin-left: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: space-betweensssssss;
+    margin-left: 20%;
+    
+    
 }
 
 .ecris {
     position: absolute;
 width: 100%;
-height: 120vh;
+height: 140vh;
 
 background: #56597A;
+}
+
+/*en fait la partie responsive du site*/
+
+@media screen and (min-width:1001px){
+    .menu{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .bar{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .boxe2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right .banner{
+        height: 200px;
+        width: 240px;
+    }
+    
+
+}
+@media screen and (max-width:800px){
+    .boxe3 .social{
+        display: none;
+    }
+    .box2{
+        display: block;
+    }
+    
 }
